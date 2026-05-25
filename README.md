@@ -4,7 +4,7 @@ A demo tool built for **BillionToOne's** genetic counseling workflow.
 
 Genetic counselors enter a patient's Unity or Northstar test result,
 and the tool instantly generates a warm, plain-language explanation —
-personalized for the patient, in their language — ready to print or email.
+personalized for the patient, in their language  ready to print or email.
 
 ---
 
@@ -71,7 +71,7 @@ Matched to BillionToOne's actual product lines:
 
 ### Step 2 — Download this project
 ```bash
-git clone https://github.com/YOUR_USERNAME/unity-explainer.git
+git clone https://github.com/negiayushi/unity-explainer.git
 cd unity-explainer
 ```
 
@@ -118,16 +118,19 @@ unity-explainer/
 
 ## Example Output
 
-**Input:** Maria | Sickle Cell Disease | Carrier detected | 1 in 4 | Spanish
+**Input:** Maria | Sickle Cell Disease | Carrier detected | 1 in 4 | English
 
-**Output (in Spanish):**
+**Output (in English):**
 
-> María, nos complace compartir el resultado de tu prueba genética Unity Complete.
+>  GREETING
+Maria, I'm so glad we could talk about your test results today, and I want to start by saying that everything
+looks very positive for you.
 >
-> **Lo que significa tu resultado:** Se detectó que eres portadora del gen HBB
-> asociado con la enfermedad de células falciformes. Esto significa que tienes
-> una copia que funciona y una copia que no funciona completamente. Las personas
-> portadoras son completamente sanas...
+> WHAT YOUR RESULT MEANS
+Your test results show that you are at low risk for Sickle Cell Disease, which is great news. This means that
+we didn't find any changes in your genes that would suggest you have the disease. You can feel reassured
+by this result, and we can talk more about what it means for you and your family
+...
 
 ---
 
