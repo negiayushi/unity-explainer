@@ -5,8 +5,11 @@
 # It sends the patient's result details and gets back
 # a warm, plain-language explanation.
 # ============================================================
-from dotenv import load_dotenv
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 
 from groq import Groq
 
@@ -14,7 +17,6 @@ client = Groq()
 
 # This line creates a connection to Groq.
 # It automatically reads your GROQ_API_KEY from the environment.
-client = Groq()
 
 
 def generate_explanation(
